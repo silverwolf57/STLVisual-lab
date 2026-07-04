@@ -5,11 +5,13 @@
 [![Build Status](https://img.shields.io/badge/Build-Passed-brightgreen.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
 
-`STL Visual Lab` 是一款基于 **Qt 6 (C++17)** 开发的**交互式 C++ 容器与算法可视化学习平台**。该平台专门面向 C++ 初学者，旨在解决 STL (Standard Template Library) 底层内存模型、迭代器变化和算法执行流程抽象难懂的痛点。通过**实时动画演示**、**单步调试跟踪（支持撤销）**、**代码高亮对照**以及**智能错题评测编译系统**，帮助用户直观透彻地掌握 STL 的底层运转机理。
+这里是北京大学程序设计实习课程QT大作业。关于项目的讲解视频详细可见北大网盘链接:https://disk.pku.edu.cn/link/AAC46057C46B3F4E239C408B20F1DD59A4
+
+我们的大作业是`STL Visual Lab` ，一款基于 **Qt 6 (C++17)** 开发的**交互式 C++ 容器与算法可视化学习平台**。该平台专门面向 C++ 初学者，旨在解决 STL (Standard Template Library) 底层内存模型、迭代器变化和算法执行流程抽象难懂的痛点。通过**实时动画演示**、**单步调试跟踪（支持撤销）**、**代码高亮对照**以及**智能错题评测编译系统**，帮助用户直观透彻地掌握 STL 的底层运转机理。
 
 ---
 
-## 🌟 核心功能亮点
+## 🌟 核心功能
 
 ### 1. 📊 主控中心仪表盘 (Dashboard)
 - 采用现代科技感暗色扁平化（Fusion Dark）UI 设计，提供“数据结构”与“STL算法”两大核心板块的直观入口，配备精美的高清科技感图示，交互微动效平滑自然。
@@ -80,58 +82,7 @@ STLVisualLab/
 ├── CppHighlighter.h          # 实时 C++ 源码高亮渲染器
 ├── resources.qrc             # 静态图标资源文件
 └── 1-作业报告.md              # 课程设计详细技术报告
-```
-
----
-
-## 🏗️ 架构设计图
-
-系统核心类结构与继承关系如下所示：
-
-```mermaid
-classDiagram
-    class MainWindow {
-        -QStackedWidget* mainStack
-        -QStackedWidget* dsSubStack
-        -QStackedWidget* algoSubStack
-        -QTimer* playTimer
-        -UserProfile* profile
-        showDashboard()
-        showDataStructures()
-        showAlgorithms()
-    }
-    class VisualBase {
-        stepForward()*
-        stepBackward()*
-        reset()*
-        isAtEnd()* const
-        exportImage()
-        highlightCode()
-    }
-    class SubQuizWidget {
-        -std::vector<QuizQuestion> questions
-        -QPlainTextEdit* codeEditor
-        -QTextBrowser* consoleOutput
-        showQuestion()
-        submitAnswer()
-    }
-    class QuizDatabase {
-        getQuestionsFor(Topic, frequentErrors)
-    }
-    class UserProfile {
-        -QMap<QString, QList<int>> errorHistory
-        instance()
-        recordError()
-    }
-
-    MainWindow *-- QStackedWidget
-    QStackedWidget *-- VisualBase
-    VisualBase <|-- VisualVector
-    VisualBase <|-- VisualList
-    VisualBase <|-- VisualPermutation
-    SubQuizWidget --> QuizDatabase
-    SubQuizWidget --> UserProfile
-```
+``
 
 ---
 
@@ -168,8 +119,6 @@ mingw32-make -j8
 ---
 
 ## 🎨 界面演示与视觉预览
-
-*(提示：此处可上传实际运行时的动态图或截图，以提升 GitHub 仓库的直观度)*
 
 - **主仪表盘界面**：Fusion 霓虹深色主题仪表盘。
 - **Vector 扩容动画**：清晰展示逻辑空间与物理内存的倍增对比。
