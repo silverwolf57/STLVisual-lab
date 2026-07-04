@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/data_structures.png</file>
+        <file>images/algorithms.png</file>
+    </qresource>
+</RCC>
