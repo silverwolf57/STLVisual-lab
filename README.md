@@ -5,7 +5,7 @@
 [![Build Status](https://img.shields.io/badge/Build-Passed-brightgreen.svg)]()
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
 
-这里是北京大学程序设计实习课程第64组的QT大作业，组长是覃耀纬，组员是叶子成和曹梓钊。关于项目的讲解视频详细可见北大网盘链接:https://disk.pku.edu.cn/link/AA582CCD3E002C483B86A470D47FC1F8EB
+这里是北京大学程序设计实习课程第64组的QT大作业，组长是2400013198覃耀纬，组员是2500012394叶子成和2500012917曹梓钊。关于项目的讲解视频详细可见北大网盘链接:https://disk.pku.edu.cn/link/AA582CCD3E002C483B86A470D47FC1F8EB
 
 我们的成果是`STL Visual Lab` ，一款基于 **Qt 6 (C++17)** 开发的**交互式 C++ 容器与算法可视化学习平台**。该平台专门面向 C++ 初学者，旨在解决 STL (Standard Template Library) 底层内存模型、迭代器变化和算法执行流程抽象难懂的痛点。通过**实时动画演示**、**单步调试跟踪（支持撤销）**、**代码高亮对照**以及**智能错题评测编译系统**，帮助用户直观透彻地掌握 STL 的底层运转机理。
 
