@@ -127,6 +127,3 @@ mingw32-make -j8
 
 ---
 
-## 📜 许可证
-
-本项目遵循 [MIT License](LICENSE) 许可协议。仅供学术交流与 C++ STL 可视化辅助教学使用。
